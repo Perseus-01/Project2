@@ -23,6 +23,11 @@ a:hover {
 }
 
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 .container {
 	max-width: 1440px; 
@@ -87,17 +92,12 @@ header {
 	background: #e3b873;
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 	border-radius: 2px;
-	border: 0;
+	border: 1px;
+	border-color: blue;
 
 }
 
 
-
-
-.types-of-repair {
-	display: 
-	justify-content: space-between;
-}
 
 .introduction {
 	background-image: url('./images/image1.png');
@@ -118,19 +118,28 @@ header {
 	background-color: rgba(0, 0 , 0, .7);
 }
 
+
 .title {
-	display: block;
-	margin: 0;
 	font-family: Yeseva One, 'Times New Roman', serif; 
 	font-style: normal;
-	font-weight: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+
+
+.main-title {
+	display: block;
+	margin: 0;
 	font-size: 40px;
 	line-height: 53px;
-	text-transform: uppercase;
 	width:676px;
 	height: 105px;
 	color: #FFFFFF;
 	margin-bottom: 19px;
+
+
 
 }
 
@@ -196,7 +205,7 @@ h2 {
 	background-color: #131313;
 	background-size: cover; 
 	height: 1074px;
-	padding-bottom: 90px;
+	padding-bottom: 258px;
 	position: relative; 
 }
 
@@ -234,13 +243,9 @@ h2 {
 
 .subtitle1 {
 	margin: 0;
-	font-family: Yeseva One, Times New Roman, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 27px;
 	line-height: 37px;
 	letter-spacing: -0.07em;
-	text-transform: uppercase;
 	color: #E3B873;
 }
 
@@ -255,12 +260,8 @@ h2 {
 
 .subtitle2 {
 	margin: 0;
-	font-family: Yeseva One, Times New Roman, sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: 25px;
-	text-transform: uppercase;
 	color: #E3B873;
 }
 
@@ -305,21 +306,29 @@ h2 {
 
 
 .online-control {
-	height: 537px;
-	padding-top:;
-	margin-top: ;
+		background-color: white;
+		/*padding-bottom: 50%;  для чего это? */
 }
 
 .online-control-container {
-	display: block;
+	
 	position: relative;
 
 }
 
+
+.subtitle3 {
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #FFFFFF;
+
+}
 
 .online-control-image {
 	text-align: center;
 	position: relative;
+
 }
 
 .online-control-image::before {
@@ -366,8 +375,368 @@ h2 {
 	text-align: center;
 }
 
+.contact-form {
+	display: flex;
+	width: 768px;
+	height: 51px;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 93px;
+	
+}
+
+.form-label {
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 21px;
+color: rgba(54, 54, 54, 0.5);
+}
+
+
+.input1{
+	width: 231px;
+	border: 0;
+	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+	margin-right: 50px;
+}
+
+
+
+
+.checkbox-text::before {
+	content: '';
+	display: inline-block;
+	background-image: url("./images/checkbox-unchecked.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background-position: center center; 
+}
+
+.checkbox:checked ~ .checkbox-text::before {
+	background-image: url("./images/checkbox-checked.png");
+}
+
+.checkbox {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	height: 1px;
+}
+
+
+
+
+.types-of-repair-container {
+    display: flex;
+    flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.types-of-repair {
+	height: 1700px;
+	padding:;
+}
+
+.subtitle4 {
+	font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #181818;
+}
+
+.types-of-repair-icon {
+	margin-top: 13px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    text-align: center;
+    
+}
+
+.type-of-repair-items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1236px;
+	height: 600px;
+	justify-content: space-between;
+	margin-top: 31px;
+}
+
+
+.type-of-repair-item {
+	height: 600px;
+	width: 400px;
+}
+
+
+.subtitle5 {
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 25px;
+color: #363636;
+}
+
+
+.type-of-repair-description {
+	width: 330px;
+	height: 286px;
+	margin-left: 35px;
+	margin-right: 35px;
+	background-color: white;
+	margin-top: -135px;
+	position: absolute;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+	padding: 25px 29px 49px 34px;
+}
+
+.type-of-repair-list {
+	font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 27px;
+color: #959595;
+}
+
+.advantages-and-form {
+	max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+}
+
+
+.advantages-list {
+	width: 1006px;
+	height: 645px;
+	background-image: url("./images/advantages-background.png");
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 230px;
+	margin-left: 0px;
+}
+
+.advantages-list-item {
+	display: flex; 
+	align-items: center;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 131px;
+}
+
+.request-form {
+	width: 506px;
+	height: 509px;
+	background-color: #131313;
+	box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+	margin-left: 131px;
+	margin-top: 230px;
+}
+
+.form-title {
+	font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.input2 {
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 23px;
+color: #FFFFFF;
+}
+
+.form-label2 {
+	font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 21px;
+color: rgba(255, 255, 255, 0.5);
+}
+
+.checkbox-text2 {
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 163.68%;
+color: #FFFFFF;
+}
+
+.checkbox-text2::before {
+	content: '';
+	display: inline-block;
+	background-image: url("./images/checkbox-unchecked.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background-position: center center; 
+}
+
+.checkbox2:checked ~ .checkbox-text2::before {
+	background-image: url("./images/checkbox-checked.png");
+}
+
+.checkbox2 {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	height: 1px;
+}
+
+.save {
+	width: 600px;
+	height: 100px;
+	margin-top: 50px;
+
+}
+
+.save-text {
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+color: #E3B873;
+text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+margin-left: 25px;
+}
+
+
+.fantasies {
+	background-image: url('./images/fantasies-background.JPG');
+	background-size: cover; 
+	height: 864px;
+	position: relative;
+}
+
+.fantasies::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0 , 0, .7);
+}
+
+
+.fantasies-container {
+	display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+
+.fantasies-block {
+
+}
+
+.fantasies-title {
+font-size: 27px;
+line-height: 37px;
+text-transform: uppercase;
+color: #E3B873;
+}
+
+.fantasies-list {
+	list-style-type: none;
+display: block;
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 38px;
+color: #FFFFFF;
+}
+
+
+.fantasies-room-left {
+	display: flex;
+    flex-direction: column;
+    height: 
+    width: 354px;
+    height: 864px;
+    justify-content: space-between;
+    margin-top: -41px;
+    
+}
+
+
+.fantasies-room-right {
+	display: flex;
+    flex-direction: column;
+    height: 864px;
+    width: 354px;
+    justify-content: space-between;
+    margin-top: -112px;
+}
+
+.our-clients {
+
+    background-color: white;
+	background-size: cover; 
+	height: 950px;
+	position: relative;
+	padding-bottom: 0; 
+
+}
+
+.our-clients-container {
+
+}
+
+.clients-title {
+	font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #181818;
+}
+
+.our-clients-icon {
+
+}
+
+.our-clients-icon::before {
+
+}
+
+.our-clients-icon::after {
+
+}
+
 
 /*.form {
+
 	width: 
 	height:
 	background: black;
