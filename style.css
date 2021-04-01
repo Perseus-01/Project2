@@ -1,0 +1,935 @@
+@font-face {
+	src: url('./fonts/NunitoSans-Regular.ttf');
+	font-family: "NunitoSans-Regular";
+}
+
+body {
+	margin: 0;
+	font-family: "NunitoSans-Regular", Ariel, sans-serif; 
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #E3B873;
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.container {
+	max-width: 1440px; 
+	margin: 0 auto;
+	width: 100%;
+}
+
+.logo {
+	color: #E3B873;
+
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 9999999;
+}
+
+.header {
+	background-color: #131313;
+
+	
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	height: 83px;
+	align-items: center;
+}
+
+.header-navigation {
+	list-style: none;
+	display: flex;
+}
+
+.header-navigation-item {
+	margin-right: 47px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+.button {
+	background: transparent;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+	border-radius: 2px;
+	outline: 0;
+	border: 1px solid white;
+	cursor: pointer;
+	padding: 13px 33px;
+	color: white;
+	font-style: italic;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 11px;
+	margin-left: 45px;
+
+}
+
+.button:hover {
+	background: #e3b873;
+	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+	border-radius: 2px;
+	border: 1px;
+	border-color: blue;
+
+}
+
+
+
+.introduction {
+	background-image: url('./images/image1.png');
+	background-size: cover; 
+	height: 707px;
+	padding-top: 194px;
+	position: relative;
+	padding-bottom: 0;  
+}
+
+.introduction::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0 , 0, .7);
+}
+
+
+.title {
+	font-family: Yeseva One, 'Times New Roman', serif; 
+	font-style: normal;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+
+
+
+.main-title {
+	display: block;
+	margin: 0;
+	font-size: 40px;
+	line-height: 53px;
+	width:676px;
+	height: 105px;
+	color: #FFFFFF;
+	margin-bottom: 19px;
+
+
+
+}
+
+
+.title-description {
+	width: 504px;
+	height: 89px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 36px;
+	color: #FFFFFF;
+	margin-bottom: 41px;
+}
+
+
+.introduction-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	z-index: 1; 
+}
+
+
+.title1 {
+	display: flex;
+	width: 676px;
+	height: 105px; 
+	margin-top: 194px;
+	margin-left: 134px;
+	margin-bottom: 408px;
+	margin-right: 627px; 
+}
+
+.description {
+	display: flex; 
+	width: 504px;
+	height: 89px;
+	text-align: left;
+
+
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 36px;
+	color: #FFFFFF;
+}
+
+
+.input {
+
+}
+
+h2 {
+	display: block;
+
+}
+
+
+.completed-projects {
+	background-color: #131313;
+	background-size: cover; 
+	height: 1074px;
+	padding-bottom: 258px;
+	position: relative; 
+}
+
+.completed-projects-container {
+	display: flex;
+	width: 100%;
+	height: 1074px;
+	align-items: center;
+	margin-top: 107px;
+	margin-left: 134px
+	margin-right 134px;
+}
+
+
+.project-list {
+	display: flex;
+	list-style: none;
+	flex-direction: row; 
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-right: 160px;
+}
+
+
+.projects-item {
+	font-family: Yeseva One, Times New Roman;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	text-transform: uppercase;
+	margin-right: 60px;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.subtitle1 {
+	margin: 0;
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+	color: #E3B873;
+}
+
+.completed-project-Rostov-admiral {
+	display: flex;
+	flex-wrap: wrap;
+	width: 450px;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.subtitle2 {
+	margin: 0;
+	font-size: 18px;
+	line-height: 25px;
+	color: #E3B873;
+}
+
+.project-parameters {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: #FFFFFF;
+}
+
+.completed-projects-description-paragraph {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 27px;
+	color: #FFFFFF;
+	width: 442px;
+	height: 86px;
+}
+
+.completed-project-Rostov-admiral {
+	display: flex;
+	flex-wrap: wrap;
+	width: 370px;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+
+.project-elements {
+	margin-bottom: 34px;
+}
+
+.completed-projects-image{
+	width: 679px;
+	height: 482px;
+	margin-top: 52px;
+}
+
+
+.online-control {
+	background-color: white;
+	/*padding-bottom: 50%;  для чего это? */
+}
+
+.online-control-container {
+	
+	position: relative;
+
+}
+
+
+.subtitle3 {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+
+}
+
+.online-control-image {
+	text-align: center;
+	position: relative;
+
+}
+
+.online-control-image::before {
+	content: ' ';
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	position: absolute;
+	left: 100%;
+	right: 51.6%;
+	top: 21.23%;
+	bottom: 78.75%;
+
+}
+
+
+.online-control-image::after {
+	content: ' ';
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	position: absolute;
+	left: 51.88%;
+	right: 45.9%;
+	top: 21.23%;
+	bottom: 78.75%;
+
+}
+
+
+.online-control-photo {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+
+.online-control-description {
+	width: 681px;
+	height: 131px;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 37px;
+	text-align: center;
+}
+
+.contact-form {
+	display: flex;
+	width: 768px;
+	height: 51px;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 93px;
+	
+}
+
+.form-label {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(54, 54, 54, 0.5);
+}
+
+
+.input1{
+	width: 231px;
+	border: 0;
+	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+	margin-right: 50px;
+}
+
+
+
+
+.checkbox-text::before {
+	content: '';
+	display: inline-block;
+	background-image: url("./images/checkbox-unchecked.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background-position: center center; 
+}
+
+.checkbox:checked ~ .checkbox-text::before {
+	background-image: url("./images/checkbox-checked.png");
+}
+
+.checkbox {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	height: 1px;
+}
+
+
+
+
+.types-of-repair-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.types-of-repair {
+	height: 1700px;
+	padding:;
+}
+
+.subtitle4 {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #181818;
+}
+
+.types-of-repair-icon {
+	margin-top: 13px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	text-align: center;
+	
+}
+
+.type-of-repair-items {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1236px;
+	height: 600px;
+	justify-content: space-between;
+	margin-top: 31px;
+}
+
+
+.type-of-repair-item {
+	height: 600px;
+	width: 400px;
+}
+
+
+.subtitle5 {
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: #363636;
+}
+
+
+.type-of-repair-description {
+	width: 330px;
+	height: 286px;
+	margin-left: 35px;
+	margin-right: 35px;
+	background-color: white;
+	margin-top: -135px;
+	position: absolute;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+	padding: 25px 29px 49px 34px;
+}
+
+.type-of-repair-list {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 27px;
+	color: #959595;
+}
+
+.advantages-and-form {
+	max-width: 1400px;
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+}
+
+
+.advantages-list {
+	width: 1006px;
+	height: 645px;
+	background-image: url("./images/advantages-background.png");
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 230px;
+	margin-left: 0px;
+}
+
+.advantages-list-item {
+	display: flex; 
+	align-items: center;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-right: 131px;
+}
+
+.request-form {
+	width: 506px;
+	height: 509px;
+	background-color: #131313;
+	box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+	margin-left: 131px;
+	margin-top: 230px;
+}
+
+.form-title {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 26px;
+	text-align: center;
+
+	color: #FFFFFF;
+}
+
+.input2 {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 23px;
+	color: #FFFFFF;
+}
+
+.form-label2 {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.checkbox-text2 {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 163.68%;
+	color: #FFFFFF;
+}
+
+.checkbox-text2::before {
+	content: '';
+	display: inline-block;
+	background-image: url("./images/checkbox-unchecked.png");
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background-position: center center; 
+}
+
+.checkbox2:checked ~ .checkbox-text2::before {
+	background-image: url("./images/checkbox-checked.png");
+}
+
+.checkbox2 {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	height: 1px;
+}
+
+.save {
+	width: 600px;
+	height: 100px;
+	margin-top: 50px;
+
+}
+
+.save-text {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 26px;
+	color: #E3B873;
+	text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+	margin-left: 25px;
+}
+
+
+.fantasies {
+	background-image: url('./images/fantasies-background.JPG');
+	background-size: cover; 
+	height: 864px;
+	position: relative;
+}
+
+.fantasies::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0 , 0, .7);
+}
+
+
+.fantasies-container {
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	position: relative;
+	flex-direction: row;
+	width: 100%;
+	max-width: 1256px;
+	margin: 0 auto;
+}
+
+
+.fantasies-block {
+
+}
+
+.fantasies-title {
+	font-size: 27px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #E3B873;
+}
+
+.fantasies-list {
+	list-style-type: none;
+	display: block;
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 38px;
+	color: #FFFFFF;
+}
+
+
+.fantasies-room-left {
+	display: flex;
+	flex-direction: column;
+	height: 
+	width: 354px;
+	height: 864px;
+	justify-content: space-between;
+	margin-top: -41px;
+	
+}
+
+
+.fantasies-room-right {
+	display: flex;
+	flex-direction: column;
+	height: 864px;
+	width: 354px;
+	justify-content: space-between;
+	margin-top: -112px;
+}
+
+.our-clients {
+
+	background-color: white;
+	background-size: cover; 
+	height: 950px;
+	position: relative;
+	padding-bottom: 0; 
+	margin-top: 70px;
+
+}
+
+.our-clients-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.clients-title {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #181818;
+}
+
+.our-clients-icon {
+margin-top: 14px;
+
+}
+
+.our-clients-icon::before {
+    content: ' ';
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	position: absolute;
+	left: 100%;
+	right: 51.6%;
+	top: 21.23%;
+	bottom: 78.75%;
+}
+
+.our-clients-icon::after {
+    content: ' ';
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	position: absolute;
+	left: 100%;
+	right: 51.6%;
+	top: 21.23%;
+	bottom: 78.75%;
+}
+
+.our-clients-description {
+	font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 29px;
+text-align: center;
+color: #363636;
+margin-top: 25px;
+}
+
+.clients {
+	display: flex;
+    justify-content: space-between;
+}
+
+.client {
+	margin-right: 54px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+	padding: 14px 32px 90px 20px;
+}
+
+
+.client-name-block {
+	display: flex;
+	align-items: center;
+}
+
+.client-photo {
+	border-radius: 100%;
+	margin-right: 30px;
+}
+
+
+.client-name {
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 23px;
+
+color: #181818;
+}
+
+
+.client-description {
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 180%;
+color: #959595;
+}
+
+.client-project {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 294px;
+	height: 54px;
+	padding: 11px 12px 11px 17px;
+	background: #E3B873;
+	box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+}
+
+.project-data {
+font-family: Yeseva One;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 24px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+
+.address {
+	margin-top: -222px;
+	background-color: #131313;
+	background-size: cover; 
+	height: 953px;
+	position: relative; 
+	background-image: url("./images/address-background.JPG");
+	background-size: cover;
+}
+
+.address::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+
+}
+
+.address-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	z-index: 1; 
+}
+
+
+
+.questions-form {
+	width: 883px;
+	height: 445px;
+	background-color: #C4C4C4;
+	box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+	margin-left: 131px;
+	
+}
+
+.address-title {
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+color: #E3B873;
+margin-top: 52px;
+}
+
+.contact-links {
+	margin-top: 50px;
+}
+
+.contact-icon{
+	border-radius: 100%;
+
+}
+
+.map {
+	margin-top: 50px;
+}
+
+
+
+.footer {
+	background-color: #131313;
+}
+
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	height: 83px;
+	align-items: center;
+}
+
+.footer-navigation {
+	list-style: none;
+	display: flex;
+}
+
+.footer-navigation-item {
+	margin-right: 47px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+
+/*.form {
+
+	width: 
+	height:
+	background: black;
+	position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+.header-navigation-items {
+	display: none;
+}
+}
+
+
