@@ -3,13 +3,25 @@
 	font-family: "NunitoSans-Regular";
 }
 
+@font-face {
+	src: url('./fonts/YesevaOne-Regular.ttf');
+	font-family: "YesevaOne-Regular";
+}
+
+
 body {
-	margin: 0;
-	font-family: "NunitoSans-Regular", Ariel, sans-serif; 
+	margin: 0 auto;
+	width: 100%;
+	font-family: Nunito Sans, Arial, sans-serif;
+	max-width: 1440px;
+	font-style: normal;
+	font-weight: normal;
+	
 }
 
 body * {
 	box-sizing: border-box;
+	margin: 0 auto;
 }
 
 a {
@@ -30,9 +42,8 @@ img {
 
 
 .container {
-	max-width: 1440px; 
+	max-width: 1256px;
 	margin: 0 auto;
-	width: 100%;
 }
 
 .logo {
@@ -49,7 +60,6 @@ header {
 .header {
 	background-color: #131313;
 
-	
 }
 
 .header-content {
@@ -72,27 +82,26 @@ header {
 
 
 .button {
-	background: transparent;
-	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+	background: #E3B873;
+	box-shadow: 0px 5px 15px rgb(227 184 115 / 20%);
 	border-radius: 2px;
-	outline: 0;
-	border: 1px solid white;
-	cursor: pointer;
-	padding: 13px 33px;
+	border: 0;
 	color: white;
+	cursor: pointer;
 	font-style: italic;
-	font-weight: normal;
-	text-transform: uppercase;
 	font-size: 11px;
-	margin-left: 45px;
+	outline: 0;
+	padding: 13px 33px;
+	text-transform: uppercase;
+	text-align: center;
+
 
 }
 
 .button:hover {
-	background: #e3b873;
 	box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
 	border-radius: 2px;
-	border: 1px;
+	border: solid 2px;
 	border-color: blue;
 
 }
@@ -103,9 +112,10 @@ header {
 	background-image: url('./images/image1.png');
 	background-size: cover; 
 	height: 707px;
-	padding-top: 194px;
 	position: relative;
-	padding-bottom: 0;  
+	padding-bottom: 0; 
+	margin-top: 0; 
+
 }
 
 .introduction::before {
@@ -119,8 +129,23 @@ header {
 }
 
 
+.introduction-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: absolute;
+	z-index: 1;
+	padding-top: 194px;
+	margin-left: 134px;
+	margin-bottom: 208px;
+	margin-right: 800px;
+
+}
+
+
+
 .title {
-	font-family: Yeseva One, 'Times New Roman', serif; 
+	font-family: 'YesevaOne-Regular', 'Times New Roman', serif; 
 	font-style: normal;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -138,30 +163,20 @@ header {
 	height: 105px;
 	color: #FFFFFF;
 	margin-bottom: 19px;
-
-
-
 }
 
+
+.main-title-colored {
+	color: #E3B873;
+}
 
 .title-description {
 	width: 504px;
 	height: 89px;
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 22px;
 	line-height: 36px;
 	color: #FFFFFF;
 	margin-bottom: 41px;
-}
-
-
-.introduction-container {
-	display: flex;
-	flex-direction: column;
-	position: relative;
-	z-index: 1; 
 }
 
 
@@ -180,14 +195,21 @@ header {
 	width: 504px;
 	height: 89px;
 	text-align: left;
-
-
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 22px;
 	line-height: 36px;
 	color: #FFFFFF;
+}
+
+.introduction-buttons {
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+
+.introduction-button {
+	margin-right: 20px
 }
 
 
@@ -204,21 +226,89 @@ h2 {
 .completed-projects {
 	background-color: #131313;
 	background-size: cover; 
-	height: 1074px;
-	padding-bottom: 258px;
 	position: relative; 
+	
 }
 
 .completed-projects-container {
 	display: flex;
-	width: 100%;
 	height: 1074px;
 	align-items: center;
-	margin-top: 107px;
-	margin-left: 134px
-	margin-right 134px;
+	margin-left: 134px;
+	padding-top: 107px;
+	padding-bottom: 416px;
+	
+
+
 }
 
+.completed-projects-description {
+	display: flex;
+	margin-right: 50px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+
+
+.subtitle1 {
+	margin: 0;
+	font-size: 27px;
+	line-height: 37px;
+	letter-spacing: -0.07em;
+	color: #E3B873;
+	margin-bottom: 34px;
+}
+
+
+.subtitle2 {
+	margin: 0;
+	font-size: 18px;
+	line-height: 25px;
+	color: #E3B873;
+}
+
+.project-parameters {
+	font-size: 13px;
+	line-height: 21px;
+	color: #FFFFFF;
+	margin-bottom: 34px;
+}
+
+.completed-projects-description-paragraph {
+	font-size: 14px;
+	line-height: 27px;
+	color: #FFFFFF;
+	width: 442px;
+	height: 86px;
+	margin-bottom: 42px;
+}
+
+
+
+.project-elements {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 34px;
+
+}
+
+.project-elements1 {
+	display: flex;
+	flex-direction: column;
+	margin-right: 29px;
+}
+
+.project-elements2 {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.completed-projects-list-and-photo {
+	display: flex;
+	flex-direction: column;
+}
 
 .project-list {
 	display: flex;
@@ -232,70 +322,11 @@ h2 {
 
 .projects-item {
 	font-family: Yeseva One, Times New Roman;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: 19px;
 	text-transform: uppercase;
 	margin-right: 60px;
 	color: rgba(255, 255, 255, 0.3);
-}
-
-.subtitle1 {
-	margin: 0;
-	font-size: 27px;
-	line-height: 37px;
-	letter-spacing: -0.07em;
-	color: #E3B873;
-}
-
-.completed-project-Rostov-admiral {
-	display: flex;
-	flex-wrap: wrap;
-	width: 450px;
-	justify-content: center;
-	align-items: center;
-}
-
-
-.subtitle2 {
-	margin: 0;
-	font-size: 18px;
-	line-height: 25px;
-	color: #E3B873;
-}
-
-.project-parameters {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 21px;
-	color: #FFFFFF;
-}
-
-.completed-projects-description-paragraph {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 27px;
-	color: #FFFFFF;
-	width: 442px;
-	height: 86px;
-}
-
-.completed-project-Rostov-admiral {
-	display: flex;
-	flex-wrap: wrap;
-	width: 370px;
-	justify-content: space-between;
-	flex-direction: row;
-	align-items: center;
-}
-
-.project-elements {
-	margin-bottom: 34px;
 }
 
 .completed-projects-image{
@@ -305,14 +336,30 @@ h2 {
 }
 
 
+.slider {
+	display: flex;
+	
+}
+
+.slider-item {
+	margin-right: 29px;
+}
+
+
 .online-control {
 	background-color: white;
-	/*padding-bottom: 50%;  для чего это? */
+	position: relative;
+
+
+	
 }
 
 .online-control-container {
-	
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 1010px;
+	margin-top: -330px;
 
 }
 
@@ -325,71 +372,101 @@ h2 {
 
 }
 
-.online-control-image {
+.online-control-icon {
 	text-align: center;
 	position: relative;
 
 }
 
-.online-control-image::before {
+.online-control-icon::before {
 	content: ' ';
 	background: #E3B873;
 	width: 32px;
 	height: 1.54px;
 	position: absolute;
-	left: 100%;
-	right: 51.6%;
-	top: 21.23%;
-	bottom: 78.75%;
-
+	left: 120%;
+	top: 50%;
 }
 
 
-.online-control-image::after {
+.online-control-icon::after {
 	content: ' ';
 	background: #E3B873;
 	width: 32px;
 	height: 1.54px;
 	position: absolute;
-	left: 51.88%;
-	right: 45.9%;
-	top: 21.23%;
-	bottom: 78.75%;
+	right: 120%;
+	top: 50%;
+}
 
+
+.screen {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin-top: 31.21px;
+	width: 817px;
+	height: 434px;
+}
+
+.screen::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background: rgb(0, 0, 0, 0.8);
 }
 
 
 .online-control-photo {
-	background: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0,0,0,.8);
+	position: relative;
+
 }
 
+
+
+.play-icon {
+	position: absolute;
+	left: 366px;
+	right: 366px;
+	top: 174px;
+	bottom: 174px;
+	cursor: pointer;
+	z-index: 2;
+}
+
+
+.line {
+	margin-top: 62px;
+}
 
 .online-control-description {
 	width: 681px;
 	height: 131px;
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: 37px;
 	text-align: center;
+	margin-top: 35px;
 }
 
-.contact-form {
+.first-form {
 	display: flex;
-	width: 768px;
+	max-width: 768px;
 	height: 51px;
-	justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
+	justify-content: space-between;
+	flex-wrap: nowrap;
 	margin-top: 93px;
 	
 }
 
+
 .form-label {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 21px;
 	color: rgba(54, 54, 54, 0.5);
@@ -404,13 +481,25 @@ h2 {
 }
 
 
+.first-form-button {
+	width: 200px;
+	height: 51px;
+}
 
+
+.first-checkbox {
+	margin-top: 40px;
+}
+
+.checkbox-group {
+
+}
 
 .checkbox-text::before {
 	content: '';
 	display: inline-block;
-	background-image: url("./images/checkbox-unchecked.png");
-	background-repeat: no-repeat;
+	background: #E3B873;
+	color: white;
 	width: 18px;
 	height: 18px;
 	margin-right: 10px;
@@ -420,6 +509,8 @@ h2 {
 
 .checkbox:checked ~ .checkbox-text::before {
 	background-image: url("./images/checkbox-checked.png");
+	background-repeat: no-repeat;
+
 }
 
 .checkbox {
@@ -430,6 +521,12 @@ h2 {
 }
 
 
+.types-of-repair {
+
+	height: 1700px;
+	position: relative;
+	margin-top: 150px;
+}
 
 
 .types-of-repair-container {
@@ -439,12 +536,13 @@ h2 {
 	position: relative;
 	justify-content: center;
 	align-items: center;
-
 }
 
-.types-of-repair {
-	height: 1700px;
-	padding:;
+
+.types-of-repair-main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .subtitle4 {
@@ -452,16 +550,6 @@ h2 {
 	line-height: 28px;
 	text-align: center;
 	color: #181818;
-}
-
-.types-of-repair-icon {
-	margin-top: 13px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	
-	text-align: center;
-	
 }
 
 .type-of-repair-items {
@@ -472,6 +560,36 @@ h2 {
 	height: 600px;
 	justify-content: space-between;
 	margin-top: 31px;
+}
+
+
+
+.types-of-repair-icon {
+	margin-top: 13px;
+	text-align: center;
+	position: relative;	
+}
+
+
+.types-of-repair-icon::before {
+	content: ' ';
+	position: absolute;
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	left: 120%;
+	top: 50%;
+}
+
+
+.types-of-repair-icon::after {
+	content: ' ';
+	position: absolute;
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	right: 120%;
+	top: 50%;
 }
 
 
@@ -504,91 +622,144 @@ h2 {
 }
 
 .type-of-repair-list {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 13px;
 	line-height: 27px;
 	color: #959595;
 }
 
 .advantages-and-form {
-	max-width: 1400px;
-	margin: 0 auto;
 	display: flex;
-	width: 100%;
+	
 }
 
 
 .advantages-list {
-	width: 1006px;
+	width: 700px;
 	height: 645px;
 	background-image: url("./images/advantages-background.png");
 	background-repeat: no-repeat;
 	position: relative;
 	margin-top: 230px;
 	margin-left: 0px;
+	margin-right: 131px;
 }
 
 .advantages-list-item {
 	display: flex; 
 	align-items: center;
-	margin-bottom: 50px;
-	margin-left: 50px;
-	margin-right: 131px;
+	margin-bottom: 102px;
+	
 }
 
-.request-form {
+.advantages-list-icon {
+	background: #E3B873;
+	border: 8px solid #FFFFFF;
+	box-shadow: 0px 5px 15px rgb(227 184 115 / 15%);
+	border-radius: 30px;
+	width: 50px;
+	height: 50px;
+	padding: 5px 7px;
+	margin-right: 15px;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	margin: auto 9px auto 120px;
+}
+
+.second-form-and-save {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+.second-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 506px;
 	height: 509px;
-	background-color: #131313;
-	box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
-	margin-left: 131px;
-	margin-top: 230px;
+	background-color: black;
+	margin-top: 109px;
+	margin-left: 131px ;
+	margin-right: 100px;
+	padding-left: 49px;
+	position: relative;
+	padding-top: 28px;
+	padding-right: 49px;
+
+
 }
 
-.form-title {
+.second-form-title {
 	font-family: Nunito Sans;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 18px;
 	line-height: 26px;
 	text-align: center;
-
 	color: #FFFFFF;
+	margin-bottom: 39px;
 }
 
-.input2 {
+.form-request2 {
+	width: 408px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+	padding-bottom: 10px;
+	margin-right: 49px;
+	margin-bottom: 48px;
+	margin-left: 49px;
+
+}
+
+.form-label2 {
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	flex-direction: column;
+}
+
+input.input2 {
+	background: black;
+	border: 0;
+	color: white;
 	font-family: Nunito Sans;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 23px;
-	color: #FFFFFF;
+	z-index: 1;
 }
 
-.form-label2 {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 13px;
-	line-height: 21px;
-	color: rgba(255, 255, 255, 0.5);
+
+.second-checkbox {
+	text-align: left;
+	margin-top: -23px;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 110px;
 }
 
 .checkbox-text2 {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 14px;
 	line-height: 163.68%;
 	color: #FFFFFF;
+
+
+
 }
 
 .checkbox-text2::before {
 	content: '';
 	display: inline-block;
-	background-image: url("./images/checkbox-unchecked.png");
+	background: #E3B873;
+	color: white;
 	background-repeat: no-repeat;
 	width: 18px;
 	height: 18px;
@@ -608,17 +779,42 @@ h2 {
 	height: 1px;
 }
 
+.second-form-button {
+	width: 213px;
+	height: 51px;
+	line-height: 21px;
+	margin: 20px 49px 20px 244px;
+}
+
 .save {
-	width: 600px;
-	height: 100px;
+	display: flex;
+	justify-content: flex-start;
+	width: 506px;
+	height: 113px;
 	margin-top: 50px;
+	margin-right: 0;
+	margin-left: 866px;
 
 }
 
+
+.save-icon {
+	display: flex;
+	width: 72px;
+	height: 72px;
+	background: #E3B873;
+	box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+	border-radius: 100%;
+	position: relative;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-right: 25px;
+
+}
+
+
 .save-text {
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 18px;
 	line-height: 26px;
 	color: #E3B873;
@@ -652,7 +848,6 @@ h2 {
 	position: relative;
 	flex-direction: row;
 	width: 100%;
-	max-width: 1256px;
 	margin: 0 auto;
 }
 
@@ -666,14 +861,13 @@ h2 {
 	line-height: 37px;
 	text-transform: uppercase;
 	color: #E3B873;
+	margin-top: 137px;
+	margin-bottom: 47px;
 }
 
 .fantasies-list {
 	list-style-type: none;
 	display: block;
-	font-family: Nunito Sans;
-	font-style: normal;
-	font-weight: normal;
 	font-size: 20px;
 	line-height: 38px;
 	color: #FFFFFF;
@@ -713,9 +907,9 @@ h2 {
 }
 
 .our-clients-container {
-display: flex;
-flex-direction: column;
-align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .clients-title {
@@ -726,48 +920,43 @@ align-items: center;
 }
 
 .our-clients-icon {
-margin-top: 14px;
+	margin-top: 14px;
+	position: relative;
 
 }
 
 .our-clients-icon::before {
-    content: ' ';
+	content: ' ';
 	background: #E3B873;
 	width: 32px;
 	height: 1.54px;
 	position: absolute;
-	left: 100%;
-	right: 51.6%;
-	top: 21.23%;
-	bottom: 78.75%;
+	left: 120%;
+	top: 50%;
 }
 
 .our-clients-icon::after {
-    content: ' ';
+	content: ' ';
 	background: #E3B873;
 	width: 32px;
 	height: 1.54px;
 	position: absolute;
-	left: 100%;
-	right: 51.6%;
-	top: 21.23%;
-	bottom: 78.75%;
+	right: 120%;
+	top: 50%;
 }
 
 .our-clients-description {
-	font-family: Nunito Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 29px;
-text-align: center;
-color: #363636;
-margin-top: 25px;
+	font-size: 18px;
+	line-height: 29px;
+	text-align: center;
+	color: #363636;
+	margin-top: 25px;
+
 }
 
 .clients {
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 }
 
 .client {
@@ -790,23 +979,21 @@ margin-top: 25px;
 
 
 .client-name {
-font-family: Yeseva One;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 23px;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
 
-color: #181818;
+	color: #181818;
 }
 
 
 .client-description {
-font-family: Nunito Sans;
-font-style: normal;
-font-weight: normal;
-font-size: 13px;
-line-height: 180%;
-color: #959595;
+	font-size: 13px;
+	line-height: 180%;
+	color: #959595;
+	margin-bottom: 63px;
 }
 
 .client-project {
@@ -821,13 +1008,13 @@ color: #959595;
 }
 
 .project-data {
-font-family: Yeseva One;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 24px;
-text-transform: uppercase;
-color: #FFFFFF;
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #FFFFFF;
 }
 
 
@@ -862,21 +1049,88 @@ color: #FFFFFF;
 
 
 
-.questions-form {
+.third-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 883px;
 	height: 445px;
-	background-color: #C4C4C4;
-	box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+	background-color: black;
+	margin-top: -236px;
+	position: relative;
+	z-index: 1;
 	margin-left: 131px;
+	padding: 34px 181px;
 	
 }
 
+.third-form-title {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.form-label-3 {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	flex-direction: column;
+}
+
+.input3 {
+	border: 0;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+	padding-bottom: 8px;
+	background: black;
+	color: #FFFFFF;
+	max-width: 231px;
+
+}
+
+.name-and-phone {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 46px;
+	
+}
+
+.name-input {
+	margin-right: 58px;
+
+}
+
+
+.question-input {
+	margin-top: 48px;
+	margin-bottom: 48px;
+	width: 516px;
+}
+
+
+.third-checkbox {
+	margin-bottom: 50px;
+}
+
+
+.third-form-button {
+	width: 200px;
+	height: 51px;
+	font-size: 13px;
+	line-height: 27px;
+}
+
+
 .address-title {
-font-size: 20px;
-line-height: 28px;
-text-align: center;
-color: #E3B873;
-margin-top: 52px;
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #E3B873;
+	margin-top: 52px;
 }
 
 .contact-links {
