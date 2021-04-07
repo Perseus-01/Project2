@@ -11,18 +11,12 @@
 
 body {
 	margin: 0 auto;
-	width: 100%;
+	box-sizing: border-box;
 	font-family: Nunito Sans, Arial, sans-serif;
-	max-width: 1440px;
 	font-style: normal;
 	font-weight: normal;
-	
 }
 
-body * {
-	box-sizing: border-box;
-	margin: 0 auto;
-}
 
 a {
 	text-decoration: none;
@@ -74,7 +68,7 @@ header {
 	display: flex;
 }
 
-.header-navigation-item {
+.header-navigation-item, .header-navigation-item-phone {
 	margin-right: 47px;
 	text-decoration: none;
 	color: #FFFFFF;
@@ -226,19 +220,17 @@ h2 {
 .completed-projects {
 	background-color: #131313;
 	background-size: cover; 
-	position: relative; 
-	
+	position: relative;
+	height: 1074px; 
+
 }
 
 .completed-projects-container {
 	display: flex;
-	height: 1074px;
 	align-items: center;
 	margin-left: 134px;
 	padding-top: 107px;
 	padding-bottom: 416px;
-	
-
 
 }
 
@@ -338,7 +330,7 @@ h2 {
 
 .slider {
 	display: flex;
-	
+
 }
 
 .slider-item {
@@ -349,16 +341,16 @@ h2 {
 .online-control {
 	background-color: white;
 	position: relative;
+	height: 1010px;
 
 
-	
+
 }
 
 .online-control-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 1010px;
 	margin-top: -330px;
 
 }
@@ -462,7 +454,7 @@ h2 {
 	justify-content: space-between;
 	flex-wrap: nowrap;
 	margin-top: 93px;
-	
+
 }
 
 
@@ -522,10 +514,10 @@ h2 {
 
 
 .types-of-repair {
-
 	height: 1700px;
 	position: relative;
-	margin-top: 150px;
+	padding-top: 150px;
+	padding-bottom: 242px;
 }
 
 
@@ -535,7 +527,7 @@ h2 {
 	flex-direction: column;
 	position: relative;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 }
 
 
@@ -629,7 +621,10 @@ h2 {
 
 .advantages-and-form {
 	display: flex;
-	
+	justify-content: flex-start;
+	margin-top: 121px;
+
+
 }
 
 
@@ -641,21 +636,21 @@ h2 {
 	position: relative;
 	margin-top: 230px;
 	margin-left: 0px;
-	margin-right: 131px;
+	
 }
 
 .advantages-list-item {
 	display: flex; 
 	align-items: center;
 	margin-bottom: 102px;
-	
+
 }
 
 .advantages-list-icon {
 	background: #E3B873;
 	border: 8px solid #FFFFFF;
 	box-shadow: 0px 5px 15px rgb(227 184 115 / 15%);
-	border-radius: 30px;
+	border-radius: 100%;
 	width: 50px;
 	height: 50px;
 	padding: 5px 7px;
@@ -674,6 +669,7 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-left: 0 ;
 }
 
 
@@ -793,8 +789,7 @@ input.input2 {
 	height: 113px;
 	margin-top: 50px;
 	margin-right: 0;
-	margin-left: 866px;
-
+	
 }
 
 
@@ -882,7 +877,7 @@ input.input2 {
 	height: 864px;
 	justify-content: space-between;
 	margin-top: -41px;
-	
+
 }
 
 
@@ -896,13 +891,12 @@ input.input2 {
 }
 
 .our-clients {
-
 	background-color: white;
 	background-size: cover; 
-	height: 950px;
+	height: 1115px;
 	position: relative;
 	padding-bottom: 0; 
-	margin-top: 70px;
+	padding-top: 110px;
 
 }
 
@@ -1018,6 +1012,11 @@ input.input2 {
 }
 
 
+.city-cover {
+	opacity: 0.
+}
+
+
 .address {
 	margin-top: -222px;
 	background-color: #131313;
@@ -1061,7 +1060,7 @@ input.input2 {
 	z-index: 1;
 	margin-left: 131px;
 	padding: 34px 181px;
-	
+
 }
 
 .third-form-title {
@@ -1096,7 +1095,7 @@ input.input2 {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 46px;
-	
+
 }
 
 .name-input {
@@ -1172,18 +1171,5 @@ input.input2 {
 }
 
 
-/*.form {
-
-	width: 
-	height:
-	background: black;
-	position: relative;
-}
-
-@media screen and (max-width: 1440px) {
-.header-navigation-items {
-	display: none;
-}
-}
 
 
