@@ -1,161 +1,85 @@
 @media screen and (max-width: 1440px) {
 
-.container {
-	padding-left: 18px;
-	padding-right: 18px;
-}
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
 
-.first-button, .header-navigation-item {
-	display: none;
-}
+    .first-button,
+    .header-navigation-item {
+        display: none;
+    }
 
-.header-content {
-    justify-content: space-between;
+    .header {
+    margin: 0;
+    position: static;
   }
 
-.introduction {
-	height: 476px;
+  .header-content {
+    height: 57px;
+    justify-content: space-between;
+
+
+
+  }
+
+  .header-navigation-item, .first-button {
+    display: none;
+  }
+
+  .introduction {
+    height: 476px;
+    background-image: url('./images/mobile-background.JPG');
+   
 }
 
-.introduction-container {
-	padding-top: 85px;
-	padding-bottom: 61px;
-}
 
+  .introduction-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 85px;
+    padding-bottom: 61px;
 
-.main-title {
-	font-size: 23px;
-line-height: 132.83%;
-margin-bottom: 16px
-}
+    
+    
+  }
 
+  .main-title {
+    font-size: 23px;
+    line-height: 132.83%;
+    margin-bottom: 16px;
+    margin-top: 0;
+    
+  }
 
 .title-description {
-	font-size: 14px;
-line-height: 135.84%;
-margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 135.84%;
+    margin-bottom: 32px;
 }
 
 .introduction-buttons {
-	display: flex;
+    display: flex;
     flex-direction: column;
-    width: 338px;
+    align-items: center;
 }
 
 .introduction-button {
-	width: 100%;
-	margin-bottom: 26px;
+    width: 338px;
+    margin-right: 0;
 }
 
-
-.completed-projects {
-	height: 700px;
-}
-
-.completed-projects-container {
-	padding-top: 36px;
-	padding-bottom: 25px;
-}
-
-.subtitle1 {
-	font-size: 22px;
-	line-height: 138.6%;
-	text-align: center;
-	margin-bottom: 22px;
-}
-
-
-.completed-projects-description-paragraph {
-	font-size: 11px;
-line-height: 158.48%;
-text-align: center;
-margin-bottom: 36px;
-}
-
-.project-list {
-	display: none;
-}
-
-.online-control {
-	height: 850px;
-}
-
-.online-control-container {
-	padding-top: 25px;
-	padding-bottom: 62px
-}
-
-
-.subtitle3 {
-	font-size: 22px;
-line-height: 138.6%;
-text-align: center;
-margin-bottom: 19px;
+.logo {
+    margin-right: 0;
 
 }
 
 
-.online-control-description {
-	font-size: 11px;
-line-height: 169.8%;
-text-align: center;
-
+.header-navigation-item-phone {
+margin-right: 0;
+text-align: right;
 }
 
-
-.types-of-repair {
-	height: 2030px;
 }
-
-.types-of-repair-main {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.subtitle4 /*TYPES OF REPAIR*/ {
-font-size: 22px;
-line-height: 138.6%;
-text-align: center;
-margin-bottom: 17px;
-}
-
-.advantages-and-form {
-	display: none;
-}
-
-.types-of-repair-icon {
-	margin-bottom: 17px;
-}
-
-
-.our-clients {
-	display: none;
-}
-
-
-.fantasies {
-	background-image: none;
-	background-color: white;
-}
-
-.fantasies::before {
-	background-color: white;
-}
-
-.fantasies-title {
-	font-size: 22px;
-line-height: 138.6%;
-text-align: center;
-}
-
-.fantasies-list, .fantasies-room-left, .fantasies-room-right {
-	display: none;
-}
-
-.fantasy-room1-mobile {
-
-}
-
-} 
