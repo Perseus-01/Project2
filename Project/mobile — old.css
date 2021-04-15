@@ -1,0 +1,483 @@
+@media screen and (max-width: 1440px) {
+
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .first-button,
+    .header-navigation-item {
+        display: none;
+    }
+
+    .header {
+    margin: 0;
+    position: static;
+  }
+
+  .header-content {
+    height: 57px;
+    justify-content: space-between;
+
+
+
+  }
+
+  .header-navigation-item, .first-button {
+    display: none;
+  }
+
+  .logo {
+    margin-right: 0;
+
+}
+
+.header-navigation-item-phone {
+margin-right: 0;
+text-align: right;
+}
+
+
+
+  .introduction {
+    height: 476px;
+    background-image: url('./images/mobile-background.jpg');
+   
+}
+
+
+  .introduction-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 85px;
+    padding-bottom: 61px;
+
+    
+    
+  }
+
+  .main-title {
+    font-size: 23px;
+    line-height: 132.83%;
+    margin-bottom: 16px;
+    margin-top: 0;
+    
+  }
+
+.title-description {
+    font-size: 14px;
+    line-height: 135.84%;
+    margin-bottom: 32px;
+}
+
+.introduction-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction-button {
+    width: 338px;
+    margin-right: 0;
+}
+
+
+
+
+.completed-projects {
+  position: relative;
+  height: 700px; 
+  padding-bottom: 58px;
+
+}
+
+.completed-projects-container {
+  padding-top: 36px; 
+  justify-content: center;
+
+}
+
+.completed-projects-description {
+  align-items: center;
+  margin-right: 0;
+}
+  
+
+.subtitle1 {
+  font-size: 22px;
+  line-height: 138.6%;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+
+.completed-projects-description-paragraph {
+  font-size: 11px;
+  line-height: 158.48%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+.completed-projects-list-and-photo {
+  display: none;
+
+}
+
+.mobile-slider {
+  display: flex;
+  position: relative;
+  margin-bottom: 36px;
+}
+
+
+
+.mobile-slider-left-arrow {
+  position: absolute;
+  top: 35%;
+  left: 14px;
+}
+
+.mobile-slider-right-arrow {
+  position: absolute;
+  top: 35%;
+  right: 14px;
+}
+
+.project-elements {
+  margin-bottom: 0;
+}
+
+
+.project-elements1 {
+  margin-right: 61px;
+}
+
+.subtitle2 {
+  font-size: 14px;
+  line-height: 138.6%;
+  margin-bottom: 12px;
+}
+
+.project-parameters {
+  font-size: 11px;
+  line-height: 135.84%;
+  margin-bottom: 27px;
+}
+
+
+.slider {
+  display: none;
+}
+
+
+.online-control {
+  background: black;
+}
+
+
+.online-control-container {
+  height: 850px;
+  padding-top: 50px;
+  padding-bottom: 65px;
+}
+
+
+
+.subtitle3 {
+  font-size: 22px;
+  line-height: 138.6%;
+  margin-bottom: 19px;
+}
+
+.online-control-icon {
+  margin-bottom: 40px;
+
+}
+
+
+.screen {
+  width: 340px;
+  height: 207px;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+
+.play-icon {
+  height: 37px;
+  width: 37px;
+
+}
+
+
+.line {
+  margin-bottom: 21px;
+  margin-top: 0;
+}
+
+.online-control-description {
+  color: white;
+  font-size: 11px;
+  line-height: 169.8%;
+  margin-bottom: 61px;
+  margin-top: 0;
+}
+
+
+.first-form {
+  height: 300px;
+  width: 340px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0;
+
+}
+
+
+.form-request {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+
+}
+
+.form-label {
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+
+
+}
+
+.input1 {
+  width: auto;
+  border: 0;
+  border-bottom: 1px solid white;
+  margin-right: 0;
+  font-size: 14px;
+  line-height: 138.72%;
+  color: #FFFFFF;
+  background-color: black;
+  display: block;
+  width: 340px;
+  padding-bottom: 8px;
+}
+
+
+.first-form-button {
+width: 340px;
+}
+
+.checkbox-text {
+  color: white;
+}
+
+
+/*TYPES OF REPAIR*/
+
+.types-of-repair {
+  padding-top: 58px;
+  padding-bottom: 50px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 250px;
+}
+
+.subtitle4 {
+  font-size: 22px;
+  line-height: 138.6%;
+  margin-bottom: 17px;
+  
+}
+
+.types-of-repair-icon {
+  margin-top: 0;
+  margin-bottom: 17px;
+  
+}
+
+
+.type-of-repair-items {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+
+.type-of-repair-item {
+  margin-bottom: 59px;
+  margin-right: 0;
+  
+}
+
+.type-of-repair-description {
+  position: relative;
+  width: 220px;
+  height: 241px;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: white;
+  margin-top: -142px;
+  padding: 21px 21px 41px 31px;
+
+}
+
+.price {
+  position: relative;
+  margin-right: 150px;
+  margin-top: 0;
+  margin-left: 0;
+  
+  
+}
+
+
+.price-title {
+  font-size: 15px;
+  line-height: 138.6%;
+  padding: 11px 16px 11px 16px;
+  text-align: center;
+ 
+}
+
+
+.advantages-and-form {
+  display: none;
+}
+
+
+.fantasies {
+  height: 250px;
+  background-image: none;
+  background-color: white;
+
+}
+
+.fantasies::before {
+  display: none;
+}
+
+
+
+.fantasies-list {
+  display: none;
+}
+
+.fantasies-room-left {
+  display: none;
+
+}
+
+
+.fantasies-room-right {
+  display: none;
+}
+
+
+.fantasies-title {
+  font-size: 22px;
+  line-height: 138.6%;
+  margin-top: 55px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+
+.mobile-slider-2 {
+  display: flex;
+  position: relative;
+  
+}
+
+.mobile-slider-left-arrow2 {
+  position: absolute;
+  top: 45%;
+  left: 14px;
+}
+
+.mobile-slider-right-arrow2 {
+  position: absolute;
+  top: 45%;
+  right: 14px;
+}
+
+
+.our-clients {
+  display: none;
+}
+
+
+.address {
+  padding-top: 173px;
+  background-color: black;
+  background-image: none;
+  
+}
+
+
+.third-form {
+  
+  width: 340px;
+  height: auto;
+  background-color: black;
+  margin-top: 52px;
+  position: relative;
+  padding-bottom: 34px;
+}
+
+.third-form-button {
+  width: 340px;
+}
+
+.name-and-phone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 46px;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+
+.question-form {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 0;
+  margin-right: 0;
+
+}
+
+
+.name-input {
+  margin-right: 0;
+  margin-bottom: 48px;
+
+
+}
+
+
+.map {
+  display: none;
+
+}
+
+.mobile-map {
+  display: flex;
+}
+
+
+.footer {
+  display: none;
+}
+
+
+
+
+
+}
