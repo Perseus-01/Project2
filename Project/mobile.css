@@ -38,6 +38,51 @@
   }
 
 
+  .introduction {
+    height: 476px;
+    background-image: url('./images/mobile-background.jpg');
+    
+  }
+
+
+  .introduction-container {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 85px;
+    padding-bottom: 61px;
+
+    
+
+  }
+
+  .main-title {
+    font-size: 23px;
+    line-height: 132.83%;
+    margin-bottom: 16px;
+    margin-top: 0;
+    
+  }
+
+  .title-description {
+    font-size: 14px;
+    line-height: 135.84%;
+    margin-bottom: 32px;
+  }
+
+  .introduction-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introduction-button {
+    width: 338px;
+    margin-right: 0;
+  }
+
+
 
 
   .completed-projects {
@@ -125,6 +170,117 @@
   .slider {
     display: none;
   }
+
+
+  .online-control {
+    background: black;
+  }
+
+
+  .online-control-container {
+    height: 850px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+
+
+
+  .subtitle3 {
+    font-size: 22px;
+    line-height: 138.6%;
+    margin-bottom: 19px;
+  }
+
+  .online-control-icon {
+    margin-bottom: 40px;
+
+  }
+
+
+  .screen {
+    width: 340px;
+    height: 207px;
+    margin-top: 0;
+    margin-bottom: 28px;
+  }
+
+
+  .play-icon {
+    height: 37px;
+    width: 37px;
+    top: 45%;
+    left: 45%;
+    right: 50%;
+    bottom: 50%;
+
+  }
+
+
+  .line {
+    margin-bottom: 21px;
+    margin-top: 0;
+  }
+
+  .online-control-description {
+    color: white;
+    font-size: 11px;
+    line-height: 169.8%;
+    margin-bottom: 61px;
+    margin-top: 0;
+  }
+
+
+  .first-form {
+    height: 300px;
+    width: 340px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+
+  }
+
+
+  .form-request {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+
+  }
+
+  .form-label {
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+
+
+  }
+
+  .input1 {
+    width: auto;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 138.72%;
+    color: #FFFFFF;
+    background-color: black;
+    display: block;
+    width: 340px;
+    padding-bottom: 8px;
+  }
+
+
+  .first-form-button { 
+    width: 340px;
+  }
+
+  .checkbox-text {
+    color: white;
+  }
+
+
+
 
 
 

@@ -133,6 +133,86 @@ header {
 }
 
 
+
+
+
+
+.introduction {
+	background-image: url('./images/image1.png');
+	height: 707px;
+	background-size: cover; 
+	position: relative;
+
+}
+
+
+.introduction-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	position: relative;
+	z-index: 1;
+	margin-left: 134px;
+	
+}
+
+.introduction-overlay {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0 , 0, .7);
+}
+
+.main-title {
+	display: block;
+	margin-top: 194px;
+	margin-bottom: 19px; 
+	font-size: 40px;
+	line-height: 53px;
+	color: #FFFFFF;
+	
+}
+
+.main-title-colored {
+	color: #E3B873;
+}
+
+.title-description {
+	font-size: 22px;
+	line-height: 36px;
+	color: #FFFFFF;
+	margin-bottom: 41px;
+}
+
+
+.introduction-buttons {
+	display: flex;
+	justify-content: flex-start;
+	
+}
+
+
+.introduction-button {
+	margin-right: 20px;
+	font-size: 11px;
+	line-height: 15px;
+	margin-bottom: 26px;
+
+}
+
+
+h2 {
+	display: block;
+
+}
+
+
+
+
+
 .completed-projects {
 	background-color: #131313;
 	background-size: cover; 
@@ -222,6 +302,19 @@ header {
 	margin-right: 29px;
 }
 
+.slider-item-circle {
+	width: 10px;
+	height: 10px;
+	margin-right: 17px;
+	cursor: pointer;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.slider-item-circle:hover {
+	background:#ffffff;
+}
+
 
 .completed-projects-list-and-photo {
 	display: flex;
@@ -255,3 +348,199 @@ header {
 
 }
 
+
+
+
+
+
+.online-control {
+	background-color: white;
+	position: relative;
+	padding-bottom: 100px;
+
+	
+
+}
+
+.online-control-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 1010px;
+	margin-top: -320px;
+	padding-bottom: 50px;
+	
+
+}
+
+
+.subtitle3 {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+
+}
+
+.online-control-icon {
+	text-align: center;
+	position: relative;
+
+}
+
+.online-control-icon::before {
+	content: ' ';
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	position: absolute;
+	left: 120%;
+	top: 50%;
+}
+
+
+.online-control-icon::after {
+	content: ' ';
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	position: absolute;
+	right: 120%;
+	top: 50%;
+}
+
+
+.screen {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin-top: 31.21px;
+	width: 817px;
+	height: 434px;
+}
+
+.screen::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background: rgb(0, 0, 0, 0.8);
+}
+
+
+.online-control-photo {
+	background-color: rgba(0,0,0,.8);
+	position: relative;
+
+}
+
+
+.play-icon {
+	position: absolute;
+	left: 40%;
+	right: 40%;
+	top: 40%;
+	bottom: 40%;
+	cursor: pointer;
+	z-index: 2;
+}
+
+
+.line {
+	margin-top: 62px;
+}
+
+.online-control-description {
+	font-size: 18px;
+	line-height: 37px;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.first-form {
+	display: flex;
+	max-width: 768px;
+	height: 51px;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	margin-top: 93px;
+
+}
+
+
+.form-label {
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(54, 54, 54, 0.5);
+}
+
+
+.input1{
+	width: 231px;
+	border: 0;
+	border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+	margin-right: 50px;
+	font-size: 14px;
+	line-height: 23px;
+	color: #363636;
+}
+
+
+.first-form-button {
+	width: 200px;
+	height: 51px;
+	background: #E3B873;
+}
+
+
+.first-checkbox {
+	margin-top: 40px;
+	
+}
+
+
+.checkbox-text {
+	font-size: 14px;
+	line-height: 23px;
+	color: #181818; /*Почему этот стиль не применяется?*/
+
+}
+
+.checkbox-group {
+
+}
+
+.checkbox-text::before {
+	content: '';
+	display: inline-block;
+	background: #E3B873;
+	color: white;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background-position: center center; 
+}
+
+.checkbox:checked ~ .checkbox-text::before {
+	background-image: url("./images/checkbox-checked.png");
+	background-repeat: no-repeat;
+
+}
+
+.checkbox {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	height: 1px;
+}
+
+.first-form-button-mobile {
+	display: none;
+
+}
