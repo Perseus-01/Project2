@@ -174,13 +174,15 @@
 
   .online-control {
     background: black;
+    padding-bottom: 0;
   }
 
 
   .online-control-container {
     height: 850px;
     padding-top: 50px;
-    padding-bottom: 65px;
+    padding-bottom: 0;
+    margin-top: 0;
   }
 
 
@@ -231,12 +233,13 @@
 
 
   .first-form {
-    height: 300px;
+    height: auto;
     width: 340px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     margin-top: 0;
+    margin-bottom: 28px;
 
   }
 
@@ -271,18 +274,34 @@
   }
 
 
-  .first-form-button { 
-    width: 340px;
-  }
+ 
+
 
   .checkbox-text {
     color: white;
   }
 
 
+.first-checkbox {
+  margin-top: 26px;
+  margin-bottom: 45px;
 
+}
 
+ .first-form-button { 
+    display: none;
+  }
 
+  .first-form-button-mobile {
+  display: flex;
+  justify-content: center;
+  width: 340px;
+  background: #E3B873;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 27px;
+
+}
 
 
 
