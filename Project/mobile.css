@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1440px) {
 
   .container {
@@ -311,6 +312,7 @@
   padding-right: 0;
   padding-left: 0;
   margin-bottom: 250px;
+  
 }
 
 .subtitle4 {
@@ -380,6 +382,61 @@
 
 
 
+
+.fantasies {
+  height: 250px;
+  background-image: none;
+  background-color: white;
+
+}
+
+.fantasies::before {
+  display: none;
+}
+
+
+
+.fantasies-list {
+  display: none;
+}
+
+.fantasies-room-left {
+  display: none;
+
+}
+
+
+.fantasies-room-right {
+  display: none;
+}
+
+
+.fantasies-title {
+  font-size: 22px;
+  line-height: 138.6%;
+  margin-top: 55px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+
+.mobile-slider-2 {
+  display: flex;
+  position: relative;
+  
+}
+
+.mobile-slider-left-arrow2 {
+  position: absolute;
+  top: 45%;
+  left: 14px;
+}
+
+.mobile-slider-right-arrow2 {
+  position: absolute;
+  top: 45%;
+  right: 14px;
+}
 
 
 

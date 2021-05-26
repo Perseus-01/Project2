@@ -882,3 +882,84 @@ input.input2 {
 	text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 	margin-left: 25px;
 }
+
+
+/*НОВАЯ СЕКЦИЯ FANTASIES*/
+
+
+.fantasies {
+	background-image: url('./images/fantasies-background.jpg');
+	background-size: cover; 
+	height: 864px;
+	position: relative;
+
+}
+
+.fantasies::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(0, 0 , 0, .7);
+}
+
+
+.fantasies-container {
+	display: flex;
+	justify-content: space-between;
+	z-index: 1;
+	position: relative;
+	
+}
+
+
+.fantasies-block {
+
+}
+
+.fantasies-title {
+	font-size: 27px;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #E3B873;
+	margin-top: 137px;
+	margin-bottom: 47px;
+}
+
+.fantasies-list {
+	list-style-type: none;
+	display: block;
+	font-size: 20px;
+	line-height: 38px;
+	color: #FFFFFF;
+}
+
+
+.fantasies-room-left {
+	display: flex;
+	flex-direction: column;
+	height: 
+	width: 354px;
+	height: 864px;
+	justify-content: space-between;
+	margin-top: -41px;
+
+}
+
+
+.fantasies-room-right {
+	display: flex;
+	flex-direction: column;
+	height: 864px;
+	width: 354px;
+	justify-content: space-between;
+	margin-top: -112px;
+}
+
+
+.mobile-slider-2 {
+	display: none;
+}
+
