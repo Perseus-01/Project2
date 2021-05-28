@@ -936,6 +936,12 @@ input.input2 {
 	color: #FFFFFF;
 }
 
+.fantasies-list-item:hover {
+	color: #E3B873;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 
 .fantasies-room-left {
 	display: flex;
@@ -961,5 +967,145 @@ input.input2 {
 
 .mobile-slider-2 {
 	display: none;
+}
+
+
+/*НОВАЯ СЕКЦИЯ OUR CLIENTS*/
+
+.our-clients {
+	background-color: white;
+	background-size: cover; 
+	/*height: 1115px;*/
+	position: relative;
+	padding-bottom: 0; 
+	padding-top: 110px;
+
+}
+
+.our-clients-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.clients-title {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #181818;
+}
+
+.our-clients-icon {
+	margin-top: 14px;
+	position: relative;
+
+}
+
+.our-clients-icon::before {
+	content: ' ';
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	position: absolute;
+	left: 120%;
+	top: 50%;
+}
+
+.our-clients-icon::after {
+	content: ' ';
+	background: #E3B873;
+	width: 32px;
+	height: 1.54px;
+	position: absolute;
+	right: 120%;
+	top: 50%;
+}
+
+.our-clients-description {
+	font-size: 18px;
+	line-height: 29px;
+	text-align: center;
+	color: #363636;
+	margin-top: 25px;
+
+}
+
+.clients {
+	display: flex;
+	justify-content: space-between;
+}
+
+.client {
+	margin-right: 54px;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+	padding: 14px 32px 0px 20px;
+}
+
+
+.client-name-block {
+	display: flex;
+	align-items: center;
+}
+
+.client-photo {
+	border-radius: 100%;
+	margin-right: 30px;
+}
+
+
+.client-name {
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+
+	color: #181818;
+}
+
+
+.client-description {
+	font-size: 13px;
+	line-height: 180%;
+	color: #959595;
+	margin-bottom: 63px;
+}
+
+.client-project {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 294px;
+	height: 54px;
+	padding: 11px 12px 11px 17px;
+	background: #E3B873;
+	box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+	margin-left: -20px;
+	margin-bottom: -28px;
+}
+
+.project-data {
+	font-family: Yeseva One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 24px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-right: 2px;
+}
+
+
+.city-cover {
+	opacity: 0.2;
+	display: flex;
+	height: 300px;
+	justify-content: center;
+	background-image: url(./images/city-cover.svg);
+    background-repeat: repeat;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    margin-top: 105px;
+
 }
 
