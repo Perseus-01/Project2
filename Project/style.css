@@ -979,6 +979,7 @@ input.input2 {
 	position: relative;
 	padding-bottom: 0; 
 	padding-top: 110px;
+	margin-bottom: 225px;
 
 }
 
@@ -1100,12 +1101,188 @@ input.input2 {
 .city-cover {
 	opacity: 0.2;
 	display: flex;
-	height: 300px;
+	height: 350px;
 	justify-content: center;
 	background-image: url(./images/city-cover.svg);
     background-repeat: repeat;
     transform: matrix(-1, 0, 0, 1, 0, 0);
-    margin-top: 105px;
+    /*margin-top: 100px;*/
+    align-self: stretch;
 
 }
+
+
+
+/*НОВАЯ СЕКЦИЯ ADDRESS + FOOTER*/
+
+.address {
+	margin-top: -222px;
+	background-color: #131313;
+	background-size: cover; 
+	position: relative; 
+	background-image: url("./images/address-background.JPG");
+	background-size: cover;
+	padding-bottom: 60px;
+	
+}
+
+.address::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+
+}
+
+.address-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-items: center;
+	z-index: 1; 
+}
+
+
+
+.third-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 883px;
+	height: 445px;
+	background-color: black;
+	margin-top: -222px;
+	position: relative;
+	z-index: 1;
+	padding-top: 34px;
+	padding-bottom: 34px;
+
+}
+
+
+.third-form-title {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #FFFFFF;
+
+}
+
+.form-label-3 {
+	font-size: 13px;
+	line-height: 21px;
+	color: rgba(255, 255, 255, 0.5);
+	display: flex;
+	flex-direction: column;
+}
+
+.input3 {
+	border: 0;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+	padding-bottom: 8px;
+	background: black;
+	color: #FFFFFF;
+	max-width: 231px;
+
+}
+
+.name-and-phone {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 46px;
+	margin-left: 181px;
+	margin-right: 181px;
+
+}
+
+.name-input {
+	margin-right: 58px;
+
+}
+
+
+.question-form {
+	margin-top: 48px;
+	margin-bottom: 48px;
+	margin-left: 0;
+	margin-right: 0;
+
+}
+
+
+.third-checkbox {
+	margin-bottom: 50px;
+}
+
+
+.third-form-button {
+	width: 200px;
+	height: 51px;
+	font-size: 13px;
+	line-height: 27px;
+}
+
+
+.address-title {
+	font-size: 20px;
+	line-height: 28px;
+	text-align: center;
+	color: #E3B873;
+	margin-top: 52px;
+}
+
+.contact-links {
+	margin-top: 50px;
+}
+
+.contact-icon{
+	border-radius: 100%;
+
+}
+
+
+
+.map {
+	margin-top: 50px;
+}
+
+
+.mobile-map {
+	display: none;
+}
+
+
+
+
+
+
+.footer {
+	background-color: #131313;
+}
+
+
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	height: 83px;
+	align-items: center;
+}
+
+.footer-navigation {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.footer-navigation-item {
+	margin-right: 47px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 11px;
+	line-height: 15px;
+}
+
 
